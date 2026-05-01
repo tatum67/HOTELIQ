@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (problemItems.length > 0) {
         problemItems.forEach(item => {
             item.addEventListener('click', () => {
-                item.classList.toggle('selected');
+                problemItems.forEach(el => el.classList.remove('selected'));
+                item.classList.add('selected');
             });
         });
     }
