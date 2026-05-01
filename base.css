@@ -1,0 +1,55 @@
+:root {
+    --bg-color: #F5F5F0;
+    --card-bg: #FFFFFF;
+    --text-main: #2D2D2D;
+    --text-muted: #8E8E93;
+    --header-bg: #1A1A2E;
+    --primary-color: #1A1A2E;
+    --red-bg: #FCE8E8;
+    --red-text: #D9534F;
+    --green-bg: #E8F5E9;
+    --green-text: #4CAF50;
+    --yellow-bg: #FFF3E0;
+    --yellow-text: #FF9800;
+    --blue-bg: #E3F2FD;
+    --blue-text: #1E88E5;
+    --brown-bg: #EFEBE9;
+    --brown-text: #6D4C41;
+    --purple-bg: #F3E5F5;
+    --purple-text: #9C27B0;
+    --border-color: #E0E0E0;
+    --nav-bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+        padding-bottom: 80px; 
+    }
+}

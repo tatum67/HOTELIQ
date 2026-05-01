@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelIQ - App Huésped</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="guest.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">HotelIQ</div>
+            <ul class="nav-links">
+                <li class="active"><a href="guest.html"><span class="icon">📱</span><span class="text">App
+                            Huésped</span></a></li>
+                <li><a href="rooms.html"><span class="icon">🚪</span><span class="text">Habitaciones</span></a></li>
+                <li><a href="index.html"><span class="icon">📊</span><span class="text">Panel Control</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="guest-dashboard">
+                <header class="app-header">
+                    <div>
+                        <h1>HotelIQ</h1>
+                        <p>Bienvenido, Carlos</p>
+                    </div>
+                    <div class="status-badge green room-selector-badge">
+                        <span class="dot"></span>
+                        <select id="room-select" class="room-select">
+                            <option value="412">Habitación 412</option>
+                            <option value="408">Habitación 408</option>
+                            <option value="404">Habitación 404</option>
+                            <option value="401">Habitación 401</option>
+                            <option value="307">Habitación 307</option>
+                            <option value="215">Habitación 215</option>
+                        </select>
+                        <span> — Check-in activo</span>
+                    </div>
+                </header>
+                <div class="card">
+                    <h3>¿Cómo encontraste la habitación?</h3>
+                    <div class="rating-stars">
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active selected-bg">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="rating-text">Buena — algunas observaciones</p>
+                </div>
+                <div class="card">
+                    <h3>Reportar un problema</h3>
+                    <div class="problem-grid">
+                        <div class="problem-item selected" data-color="red">
+                            <span class="icon">🧼</span>
+                            <span>Baño sucio</span>
+                        </div>
+                        <div class="problem-item" data-color="blue">
+                            <span class="icon">🛏️</span>
+                            <span>Sábanas</span>
+                        </div>
+                        <div class="problem-item" data-color="brown">
+                            <span class="icon">💨</span>
+                            <span>Mal olor</span>
+                        </div>
+                        <div class="problem-item" data-color="yellow">
+                            <span class="icon">🔧</span>
+                            <span>Mantenimiento</span>
+                        </div>
+                    </div>
+                    <textarea class="problem-description"
+                        placeholder="Añade una descripción detallada del problema (opcional)..." rows="3"></textarea>
+                </div>
+                <div class="card">
+                    <h3>Adjuntar evidencia</h3>
+                    <button class="btn-outline">📷 Tomar foto del problema</button>
+                </div>
+                <button class="btn-primary" id="btn-send-report">Enviar reporte al hotel</button>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="guest.html" class="nav-item active"><span class="icon">📱</span><span class="text">App</span></a>
+            <a href="rooms.html" class="nav-item"><span class="icon">🚪</span><span class="text">Habitaciones</span></a>
+            <a href="index.html" class="nav-item"><span class="icon">📊</span><span class="text">Panel</span></a>
+        </nav>
+
+        <div class="toast-container" id="toast-container"></div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

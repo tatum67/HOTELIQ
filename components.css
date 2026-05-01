@@ -1,0 +1,112 @@
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.card h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.badge.red { background-color: var(--red-bg); color: var(--red-text); }
+.badge.red .dot { background-color: var(--red-text); }
+.badge.green { background-color: var(--green-bg); color: var(--green-text); }
+.badge.green .dot { background-color: var(--green-text); }
+.badge.yellow { background-color: var(--yellow-bg); color: var(--yellow-text); }
+.badge.yellow .dot { background-color: var(--yellow-text); }
+
+.btn-outline {
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed var(--border-color);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #F9F9F9;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: slideUp 0.3s ease forwards;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.toast.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(100%); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}

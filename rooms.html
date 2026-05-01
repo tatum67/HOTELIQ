@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelIQ - Estado de Habitaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="rooms.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">HotelIQ</div>
+            <ul class="nav-links">
+                <li><a href="guest.html"><span class="icon">📱</span><span class="text">App Huésped</span></a></li>
+                <li class="active"><a href="rooms.html"><span class="icon">🚪</span><span
+                            class="text">Habitaciones</span></a></li>
+                <li><a href="index.html"><span class="icon">📊</span><span class="text">Panel Control</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="dashboard-panel">
+                <div class="card panel-card">
+                    <h2>Estado de habitaciones — planta 4</h2>
+                    <div class="table-responsive">
+                        <table class="status-table">
+                            <thead>
+                                <tr>
+                                    <th>Habitación</th>
+                                    <th>Huésped</th>
+                                    <th>Calificación</th>
+                                    <th>Estado</th>
+                                    <th>Último reporte</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>412</td>
+                                    <td>Carlos M.</td>
+                                    <td class="stars">★★★★<span class="dim">★</span></td>
+                                    <td><span class="badge red"><span class="dot"></span> Alerta activa</span></td>
+                                    <td>hace 1 min</td>
+                                </tr>
+                                <tr>
+                                    <td>408</td>
+                                    <td>Ana G.</td>
+                                    <td class="stars">★★★★★</td>
+                                    <td><span class="badge green"><span class="dot"></span> Sin problemas</span></td>
+                                    <td>hace 2 h</td>
+                                </tr>
+                                <tr>
+                                    <td>404</td>
+                                    <td>Roberto S.</td>
+                                    <td class="stars">★★★<span class="dim">★★</span></td>
+                                    <td><span class="badge yellow"><span class="dot"></span> En revisión</span></td>
+                                    <td>hace 45 min</td>
+                                </tr>
+                                <tr>
+                                    <td>401</td>
+                                    <td>Lucia R.</td>
+                                    <td class="stars">★★★★★</td>
+                                    <td><span class="badge green"><span class="dot"></span> Sin problemas</span></td>
+                                    <td>hace 3 h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="guest.html" class="nav-item"><span class="icon">📱</span><span class="text">App</span></a>
+            <a href="rooms.html" class="nav-item active"><span class="icon">🚪</span><span
+                    class="text">Habitaciones</span></a>
+            <a href="index.html" class="nav-item"><span class="icon">📊</span><span class="text">Panel</span></a>
+        </nav>
+
+        <div class="toast-container" id="toast-container"></div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

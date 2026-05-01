@@ -1,0 +1,42 @@
+.dashboard-panel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.panel-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.status-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.status-table th {
+    text-align: left;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.status-table td {
+    padding: 15px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #F5F5F0;
+}
+
+.status-table td.stars {
+    color: #FFC107;
+    letter-spacing: 2px;
+}
+
+.status-table td.stars .dim {
+    color: #E0E0E0;
+}
